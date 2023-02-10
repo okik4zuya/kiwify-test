@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <img src="https://dashboard.kiwify.com.br/_nuxt/img/kiwify-green-logo.2af0e50.png" />
+            <h2> Criar nova conta </h2>
+            <p>
+                Ou
+                <a href="/login">
+                    entrar na sua conta existente
+                </a>
+            </p>
+            <form>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input class="form-control" />
+                    <div style="margin-top: 4px;" class="warning">
+                        Esse campo é obrigatório
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: 1.5rem;">
+                    <label>Repetir e-mail</label>
+                    <input class="form-control" />
+                    <div style="margin-top: 4px;" class="warning">
+                        <div>Os dois e-mails devem ser iguais.</div>
+                        <div>Esse campo é obrigatório</div>
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: 1.5rem;">
+                    <label>Senha</label>
+                    <input class="form-control" />
+                    <div style="margin-top: 4px;" class="warning">
+                        Esse campo é obrigatório
+                    </div>
+                </div>
+                <div style="margin-top: 1.5rem;">
+                    <label class="approve">
+                        <div>
+                            <input type="checkbox" class="form-checkbox">
+                        </div>
+                        <div>
+                            <span>Eu li e aceito os <a href="https://kiwify.com.br/termos-de-uso" target="_blank"
+                                    class="underline"> termos
+                                    de uso</a>, <a href="https://kiwify.com.br/licenca-de-uso-software" target="_blank"
+                                    class="underline"> termos de licença de uso de software</a>, <a
+                                    href="https://kiwify.com.br/politica-de-conteudo" target="_blank" class="underline">
+                                    política de conteúdo</a> da Kiwify
+                            </span> <!---->
+                        </div>
+                    </label>
+                </div>
+                <div class="button-container" style="margin-top: 1.5rem;">
+                    <button type="button"
+                        class="button"><!---->
+                        Entrar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        let reqInput = document.querySelectorAll("input");
+
+        for (let i = 0; i < reqInput.length; i++) {
+            reqInput[i].addEventListener('input', () => reqInput[i].value === "" ? reqInput[i].classList.add('required') : reqInput[i].classList.remove('required'));
+            reqInput[i].addEventListener('focusout', () => reqInput[i].value === "" ? reqInput[i].classList.add('required') : reqInput[i].classList.remove('required'));
+        }
+    </script>
+
+
+</body>
+
+</html>

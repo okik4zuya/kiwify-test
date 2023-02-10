@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <img src="https://dashboard.kiwify.com.br/_nuxt/img/kiwify-green-logo.2af0e50.png" />
+            <h2>
+                Entrar na sua conta
+            </h2>
+            <p>
+                Ou
+                <a href="/signup?redirect"
+                    class="font-medium">
+                    fazer cadastro
+                </a>
+            </p>
+            <form>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input class="form-control" />
+                    <div style="margin-top: 4px;" class="warning">
+                        Esse campo é obrigatório
+                    </div>
+                </div>
+                <div class="form-group" style="margin-top: 1.5rem;">
+                    <label>Senha</label>
+                    <input class="form-control" />
+                    <div  style="margin-top: 4px;"class="warning">
+                        Esse campo é obrigatório
+                    </div>
+                </div>
+                <div class="reset-password">
+                    <a href="/ResetPassword">
+                        Esqueceu a senha?
+                    </a>
+                </div>
+                <div class="button-container" style="margin-top: 1.5rem;">
+                    <button type="button"
+                        class="button"><!---->
+                        Entrar
+                    </button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script>
+        let reqInput = document.querySelectorAll("input");
+
+        for (let i = 0; i < reqInput.length; i++) {
+            reqInput[i].addEventListener('input', () => reqInput[i].value === "" ? reqInput[i].classList.add('required') : reqInput[i].classList.remove('required'));
+            reqInput[i].addEventListener('focusout', () => reqInput[i].value === "" ? reqInput[i].classList.add('required') : reqInput[i].classList.remove('required'));
+        }
+    </script>
+
+
+</body>
+
+</html>
