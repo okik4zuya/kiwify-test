@@ -13,7 +13,7 @@ a {
 
 :root {
   --baseColor: rgba(249, 250, 251, 1);
-  --colorGray700: rgba(55, 65, 81, var(--text-opacity));
+  --colorGray700: rgba(55, 65, 81, 1);
 }
 
 .container {
