@@ -84,7 +84,6 @@ const SignupForm = () => {
               Eu li e aceito os{" "}
               <a
                 href="https://kiwify.com.br/termos-de-uso"
-                target="_blank"
                 className="underline"
               >
                 {" "}
@@ -93,7 +92,6 @@ const SignupForm = () => {
               ,{" "}
               <a
                 href="https://kiwify.com.br/licenca-de-uso-software"
-                target="_blank"
                 className="underline"
               >
                 {" "}
@@ -102,7 +100,6 @@ const SignupForm = () => {
               ,{" "}
               <a
                 href="https://kiwify.com.br/politica-de-conteudo"
-                target="_blank"
                 className="underline"
               >
                 política de conteúdo

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import SignupForm from "../components/block/SignupForm";
+import SignupForm from "../components/SignupForm";
 
 const Signup = () => {
   return (
     <div className="container">
       <div className="wrapper">
-        <img src="https://dashboard.kiwify.com.br/_nuxt/img/kiwify-green-logo.2af0e50.png" />
+        <img alt="kiwify" src="https://dashboard.kiwify.com.br/_nuxt/img/kiwify-green-logo.2af0e50.png" />
         <h2> Criar nova conta </h2>
         <span>
           Ou {" "}
